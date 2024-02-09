@@ -1,0 +1,17 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1707438480
+::res://Assets/::1707437283
+icon.svg::CompressedTexture2D::5021157441938025771::1707360970::1707437037::1::::<><>::
+Planet-PNG-Free-Download.png::CompressedTexture2D::3316079076198165069::1707437160::1707437283::1::::<><>::
+Planet-PNG-HD-Isolated.png::CompressedTexture2D::5169433212724905037::1707437276::1707437281::1::::<><>::
+Planet-PNG-Isolated-File.png::CompressedTexture2D::7853289454351173283::1707437276::1707437281::1::::<><>::
+Planet-PNG-Isolated-Pic.png::CompressedTexture2D::2837753136508215325::1707437276::1707437281::1::::<><>::
+Planet-PNG-Photos.png::CompressedTexture2D::4213657882114308970::1707437276::1707437281::1::::<><>::
+Planet-PNG.png::CompressedTexture2D::812973554685390746::1707436881::1707437037::1::::<><>::
+Planet-Transparent-PNG.png::CompressedTexture2D::1130693184287109083::1707437276::1707437282::1::::<><>::
+pngimg.com - sun_PNG13428.png::CompressedTexture2D::7741579716551421186::1707435647::1707437037::1::::<><>::
+space.webp::CompressedTexture2D::681037604240557484::1707436238::1707436241::1::::<><>::
+::res://Scenes/::1707438324
+Scene_No_Gravity.tscn::PackedScene::3475612650179442277::1707438324::0::1::::<><>::uid://jx5ub4d1b1wq::::res://Assets/space.webp<>res://Scripts/Rotate.gd<>uid://lt2s5mafb7ys::::res://Assets/Planet-PNG.png<>uid://bnillqu2vg4ld::::res://Assets/Planet-PNG-Free-Download.png<>uid://cfwd2scn8u7hp::::res://Assets/Planet-PNG-HD-Isolated.png<>uid://bgovm51ef7ysj::::res://Assets/Planet-PNG-Isolated-Pic.png<>uid://b1belhelx2171::::res://Assets/Planet-PNG-Photos.png<>uid://qdyl7njn3hx8::::res://Assets/Planet-Transparent-PNG.png<>uid://dj5gsauq3k3qd::::res://Assets/Planet-PNG-Isolated-File.png<>uid://dikcxma3wdedu::::res://Assets/pngimg.com - sun_PNG13428.png
+::res://Scripts/::1707435345
+Rotate.gd::GDScript::-1::1707361046::0::1::::<>Node2D<>::

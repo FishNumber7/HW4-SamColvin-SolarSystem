@@ -1,0 +1,107 @@
+[gd_scene load_steps=11 format=3 uid="uid://bpru3ko0lu8dl"]
+
+[ext_resource type="Texture2D" uid="uid://jx5ub4d1b1wq" path="res://Assets/space.webp" id="1_4mvoj"]
+[ext_resource type="Script" path="res://Scripts/Rotate.gd" id="2_psavk"]
+[ext_resource type="Texture2D" uid="uid://lt2s5mafb7ys" path="res://Assets/Planet-PNG.png" id="3_vcnj4"]
+[ext_resource type="Texture2D" uid="uid://bnillqu2vg4ld" path="res://Assets/Planet-PNG-Free-Download.png" id="4_0wh3f"]
+[ext_resource type="Texture2D" uid="uid://cfwd2scn8u7hp" path="res://Assets/Planet-PNG-HD-Isolated.png" id="5_t7x1p"]
+[ext_resource type="Texture2D" uid="uid://bgovm51ef7ysj" path="res://Assets/Planet-PNG-Isolated-Pic.png" id="6_72x0y"]
+[ext_resource type="Texture2D" uid="uid://b1belhelx2171" path="res://Assets/Planet-PNG-Photos.png" id="7_lduy8"]
+[ext_resource type="Texture2D" uid="uid://qdyl7njn3hx8" path="res://Assets/Planet-Transparent-PNG.png" id="8_s5hlv"]
+[ext_resource type="Texture2D" uid="uid://dj5gsauq3k3qd" path="res://Assets/Planet-PNG-Isolated-File.png" id="9_njd86"]
+[ext_resource type="Texture2D" uid="uid://dikcxma3wdedu" path="res://Assets/pngimg.com - sun_PNG13428.png" id="10_2nghl"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(1, 0)
+
+[node name="Space" type="Sprite2D" parent="."]
+position = Vector2(799, 450)
+scale = Vector2(0.833, 0.833)
+texture = ExtResource("1_4mvoj")
+
+[node name="System" type="Node2D" parent="."]
+position = Vector2(800, 450)
+scale = Vector2(0.3, 0.3)
+
+[node name="Planet 1 Rotation" type="Node2D" parent="System"]
+script = ExtResource("2_psavk")
+rotation_speed = 0.01
+
+[node name="Planet-png" type="Sprite2D" parent="System/Planet 1 Rotation"]
+position = Vector2(-330, 255)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_vcnj4")
+script = ExtResource("2_psavk")
+rotation_speed = 0.07
+
+[node name="Planet 2 Rotation" type="Node2D" parent="System"]
+script = ExtResource("2_psavk")
+rotation_speed = 0.012
+
+[node name="Planet-png-free-download" type="Sprite2D" parent="System/Planet 2 Rotation"]
+position = Vector2(642.5, 492.5)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("4_0wh3f")
+script = ExtResource("2_psavk")
+rotation_speed = 0.01
+
+[node name="Moon 1 Rotation" type="Node2D" parent="System/Planet 2 Rotation/Planet-png-free-download"]
+script = ExtResource("2_psavk")
+rotation_speed = -0.04
+
+[node name="Planet-png-hd-isolated" type="Sprite2D" parent="System/Planet 2 Rotation/Planet-png-free-download/Moon 1 Rotation"]
+position = Vector2(-1220, -200)
+texture = ExtResource("5_t7x1p")
+script = ExtResource("2_psavk")
+rotation_speed = 0.012
+
+[node name="Planet 3 Rotation" type="Node2D" parent="System"]
+script = ExtResource("2_psavk")
+rotation_speed = -0.003
+
+[node name="Planet-png-isolated-pic" type="Sprite2D" parent="System/Planet 3 Rotation"]
+position = Vector2(1115, -252.5)
+scale = Vector2(0.175, 0.175)
+texture = ExtResource("6_72x0y")
+script = ExtResource("2_psavk")
+rotation_speed = -0.006
+
+[node name="Planet 4 Rotation" type="Node2D" parent="System"]
+script = ExtResource("2_psavk")
+rotation_speed = 0.001
+
+[node name="Planet-png-photos" type="Sprite2D" parent="System/Planet 4 Rotation"]
+position = Vector2(-1330, -537.5)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("7_lduy8")
+script = ExtResource("2_psavk")
+rotation_speed = -0.01
+
+[node name="Planet 5 Rotation" type="Node2D" parent="System"]
+script = ExtResource("2_psavk")
+rotation_speed = -0.008
+
+[node name="Planet-transparent-png" type="Sprite2D" parent="System/Planet 5 Rotation"]
+position = Vector2(-1820, -903.333)
+scale = Vector2(0.233333, 0.233333)
+texture = ExtResource("8_s5hlv")
+script = ExtResource("2_psavk")
+rotation_speed = 0.01
+
+[node name="Node2D2" type="Node2D" parent="System/Planet 5 Rotation/Planet-transparent-png"]
+script = ExtResource("2_psavk")
+rotation_speed = 0.02
+
+[node name="Planet-png-isolated-file" type="Sprite2D" parent="System/Planet 5 Rotation/Planet-transparent-png/Node2D2"]
+position = Vector2(-700.001, 1300)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("9_njd86")
+script = ExtResource("2_psavk")
+rotation_speed = -0.008
+
+[node name="Pngimg_com-SunPng13428" type="Sprite2D" parent="."]
+position = Vector2(800, 450)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("10_2nghl")
+script = ExtResource("2_psavk")
+rotation_speed = 0.001
